@@ -1,0 +1,15 @@
+# Build stage for linux/amd64
+FROM alpine:3.18.0 as binary-amd64
+
+COPY target/x86_64-unknown-linux-musl/release/chirpstack /usr/bin/chirpstack
+
+# Final stage
+FROM alpine:3.18.0
+
+RUN apk --no-cache add ca-certificates
+
+COPY --from=binary-amd64 /usr/bin/chirpstack /usr/bin/chirpstack
+
+USER nobody:nogroup
+ENTRYPOINT ["/usr/bin/chirpstack"]
+
