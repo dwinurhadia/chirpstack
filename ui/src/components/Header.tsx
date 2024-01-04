@@ -135,7 +135,7 @@ function Header({ user }: { user: User }) {
 
   return (
     <div>
-      <img className="logo" alt="JoveOS" src="/logo.png" />
+      <img className="logo" alt="xOS NMS" src="/logo.png" />
       <div className="actions">
         <div className="search">
           <AutoComplete
