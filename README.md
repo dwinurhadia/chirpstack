@@ -111,7 +111,7 @@ make release-amd64
 make dist
 ```
 
-### Building ChirpStack binaries
+### Building ChirpStack Docker Image
 
 Run the command `docker build --platform linux/amd64 -t <docker_id>/chirpstack .`
 
