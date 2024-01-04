@@ -97,7 +97,8 @@ make dev-dependencies
 ```
 
 Run the following command within the `./chirpstack` sub-folder:
-Make sure you already export path using command 
+
+Make sure you already export path using command `export PATH="$HOME/.cargo/bin:$PATH"`
 
 ```bash
 # Build AMD64 debug build (optimized for build speed)
@@ -109,6 +110,10 @@ make release-amd64
 # Build all packages (all targets, .deb, .rpm and .tar.gz files)
 make dist
 ```
+
+### Building ChirpStack binaries
+
+Run the command `docker build --platform linux/amd64 -t <docker_id>/chirpstack .`
 
 ## License
 
