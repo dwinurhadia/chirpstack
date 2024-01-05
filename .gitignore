@@ -1,5 +1,5 @@
 # hidden files
-.*
+#.*
 !/chirpstack/.rpm
 !/.cargo
 !/.env
