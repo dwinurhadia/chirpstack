@@ -152,7 +152,7 @@ function SideMenu() {
   if (SessionStore.isAdmin()) {
     items.push({
       key: "ns",
-      label: "RAN Network Server",
+      label: "Servers",
       icon: <GlobalOutlined />,
       children: [
         {
@@ -162,8 +162,8 @@ function SideMenu() {
         },
         {
           key: "ns-tenants",
-          icon: <HomeOutlined />,
-          label: <Link to="/tenants">Network</Link>,
+          icon: <GlobalOutlined />,
+          label: <Link to="/tenants">Networks</Link>,
         },
         {
           key: "ns-users",
@@ -190,7 +190,7 @@ function SideMenu() {
   } else {
     items.push({
       key: "ns",
-      label: "RAN Network Server",
+      label: "Servers",
       icon: <CloudOutlined />,
       children: [
         {
