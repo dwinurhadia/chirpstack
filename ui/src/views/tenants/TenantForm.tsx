@@ -46,7 +46,7 @@ function TenantForm(props: IProps) {
           <Row>
             <Col span={8}>
               <Form.Item
-                label="Tenant can have gateways"
+                label="Network can have gateways"
                 name="canHaveGateways"
                 tooltip="When checked, the tenant can add gateways. Note that the usage of the gateways is not limited to this tenant only unless these are marked private."
                 valuePropName="checked"

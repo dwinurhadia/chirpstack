@@ -39,7 +39,7 @@ function CreateTenantUser({ tenant }: { tenant: Tenant }) {
             </Breadcrumb.Item>
             <Breadcrumb.Item>
               <span>
-                <Link to={`/tenants/${tenant.getId()}/users`}>Tenant users</Link>
+                <Link to={`/tenants/${tenant.getId()}/users`}>Network users</Link>
               </span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
@@ -47,7 +47,7 @@ function CreateTenantUser({ tenant }: { tenant: Tenant }) {
             </Breadcrumb.Item>
           </Breadcrumb>
         )}
-        title="Add tenant user"
+        title="Add network user"
       />
       <Card>
         <TenantUserForm initialValues={tu} onFinish={onFinish} />

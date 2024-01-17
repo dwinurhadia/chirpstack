@@ -28,7 +28,7 @@ function ListTenatUsers(props: IProps) {
       render: (text, record) => <Link to={`/tenants/${props.tenant.getId()}/users/${record.userId}/edit`}>{text}</Link>,
     },
     {
-      title: "Is tenant admin",
+      title: "Is network admin",
       dataIndex: "isAdmin",
       key: "isAdmin",
       render: (text, record) => {
@@ -91,15 +91,15 @@ function ListTenatUsers(props: IProps) {
               </span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
-              <span>Tenant users</span>
+              <span>Network users</span>
             </Breadcrumb.Item>
           </Breadcrumb>
         )}
-        title="Tenant users"
+        title="Network users"
         extra={[
           <Admin tenantId={props.tenant.getId()} isTenantAdmin>
             <Button type="primary">
-              <Link to={`/tenants/${props.tenant.getId()}/users/create`}>Add tenant user</Link>
+              <Link to={`/tenants/${props.tenant.getId()}/users/create`}>Add network user</Link>
             </Button>
           </Admin>,
         ]}
