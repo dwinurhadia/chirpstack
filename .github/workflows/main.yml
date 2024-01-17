@@ -2,21 +2,21 @@ name: CI
 on:
   push:
     branches:
-      - '*'
+      - 'staging'
     # tags:
     #   - 'v*'
 jobs:
   tests:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
         uses: actions/checkout@v2
       - 
         name: Install Nix
-        uses: cachix/install-nix-action@v20
+        uses: cachix/install-nix-action@v22
         with:
-          nix_path: nixpkgs=channel:nixos-22.11
+          nix_path: nixpkgs=channel:nixos-unstable
       -
         name: Cargo cache
         uses: actions/cache@v3
