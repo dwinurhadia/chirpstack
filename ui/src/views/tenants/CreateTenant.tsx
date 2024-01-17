@@ -28,11 +28,11 @@ function CreateTenant() {
         breadcrumbRender={() => (
           <Breadcrumb>
             <Breadcrumb.Item>
-              <span>Network-server</span>
+              <span>Network Server</span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
               <span>
-                <Link to="/tenants">Tenants</Link>
+                <Link to="/tenants">Network</Link>
               </span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
@@ -40,7 +40,7 @@ function CreateTenant() {
             </Breadcrumb.Item>
           </Breadcrumb>
         )}
-        title="Add tenant"
+        title="Add network"
       />
       <Card>
         <TenantForm initialValues={tenant} onFinish={onFinish} />

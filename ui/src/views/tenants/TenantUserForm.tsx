@@ -48,8 +48,8 @@ function TenantUserForm(props: IProps) {
         <Input disabled={props.disableEmail || props.disabled} />
       </Form.Item>
       <Form.Item
-        label="User is tenant admin"
-        tooltip="A tenant admin user is able to add and modify resources part of the tenant."
+        label="User is network admin"
+        tooltip="A network admin user is able to add and modify resources part of the tenant."
         name="isAdmin"
         valuePropName="checked"
       >

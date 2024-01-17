@@ -67,7 +67,7 @@ function EditTenantUser({ tenant }: { tenant: Tenant }) {
         breadcrumbRender={() => (
           <Breadcrumb>
             <Breadcrumb.Item>
-              <span>Tenants</span>
+              <span>Network</span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
               <span>
@@ -76,7 +76,7 @@ function EditTenantUser({ tenant }: { tenant: Tenant }) {
             </Breadcrumb.Item>
             <Breadcrumb.Item>
               <span>
-                <Link to={`/tenants/${tenant.getId()}/users`}>Tenant users</Link>
+                <Link to={`/tenants/${tenant.getId()}/users`}>Network users</Link>
               </span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
@@ -90,7 +90,7 @@ function EditTenantUser({ tenant }: { tenant: Tenant }) {
           <Admin tenantId={tenant.getId()} isTenantAdmin>
             <DeleteConfirm typ="tenant user" confirm={tu.getEmail()} onConfirm={deleteTenantUser}>
               <Button danger type="primary">
-                Delete tenant user
+                Delete network user
               </Button>
             </DeleteConfirm>
           </Admin>,

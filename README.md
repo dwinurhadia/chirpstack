@@ -113,7 +113,7 @@ make dist
 
 ### Building ChirpStack Docker Image
 
-Run the command `docker build --platform linux/amd64 -t <docker_id>/chirpstack .`
+Run the command `docker build -f Dockerfile.build --platform linux/amd64 -t <name:tag> .`
 
 ## License
 

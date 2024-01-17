@@ -112,14 +112,14 @@ function ListTenants() {
               <span>Network Server</span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
-              <span>Tenants</span>
+              <span>Network</span>
             </Breadcrumb.Item>
           </Breadcrumb>
         )}
-        title="Tenants"
+        title="Network"
         extra={[
           <Button type="primary">
-            <Link to="/tenants/create">Add tenant</Link>
+            <Link to="/tenants/create">Add network</Link>
           </Button>,
         ]}
       />

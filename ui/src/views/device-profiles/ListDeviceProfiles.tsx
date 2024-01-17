@@ -117,7 +117,7 @@ function ListDeviceProfiles(props: IProps) {
         breadcrumbRender={() => (
           <Breadcrumb>
             <Breadcrumb.Item>
-              <span>Tenants</span>
+              <span>Network</span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
               <span>

@@ -29,7 +29,7 @@ function CreateUser() {
         breadcrumbRender={() => (
           <Breadcrumb>
             <Breadcrumb.Item>
-              <span>Network-server</span>
+              <span>Network Server</span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
               <span>
