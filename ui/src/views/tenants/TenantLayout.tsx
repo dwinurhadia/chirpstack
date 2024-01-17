@@ -35,7 +35,7 @@ function TenantLayout({ tenant }: { tenant: Tenant }) {
         breadcrumbRender={() => (
           <Breadcrumb>
             <Breadcrumb.Item>
-              <span>Tenants</span>
+              <span>Network</span>
             </Breadcrumb.Item>
             <Breadcrumb.Item>
               <span>{tenant.getName()}</span>
