@@ -43,12 +43,12 @@ function TenantLayout({ tenant }: { tenant: Tenant }) {
           </Breadcrumb>
         )}
         title={tenant.getName()}
-        subTitle={`tenant id: ${tenant.getId()}`}
+        subTitle={`network id: ${tenant.getId()}`}
         extra={[
           <Admin>
             <DeleteConfirm confirm={tenant.getName()} typ="tenant" onConfirm={deleteTenant}>
               <Button danger type="primary">
-                Delete tenant
+                Delete network
               </Button>
             </DeleteConfirm>
           </Admin>,
