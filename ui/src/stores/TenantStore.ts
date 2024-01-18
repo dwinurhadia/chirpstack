@@ -38,7 +38,7 @@ class TenantStore extends EventEmitter {
       }
 
       notification.success({
-        message: "Tenant created",
+        message: "Network created",
         duration: 3,
       });
 
@@ -68,7 +68,7 @@ class TenantStore extends EventEmitter {
       }
 
       notification.success({
-        message: "Tenant updated",
+        message: "Network updated",
         duration: 3,
       });
 
@@ -86,7 +86,7 @@ class TenantStore extends EventEmitter {
       }
 
       notification.success({
-        message: "Tenant deleted",
+        message: "Network deleted",
         duration: 3,
       });
 
@@ -113,7 +113,7 @@ class TenantStore extends EventEmitter {
       }
 
       notification.success({
-        message: "Tenant user added",
+        message: "Network user added",
         duration: 3,
       });
 
@@ -140,7 +140,7 @@ class TenantStore extends EventEmitter {
       }
 
       notification.success({
-        message: "Tenant user updated",
+        message: "Network user updated",
         duration: 3,
       });
 
@@ -156,7 +156,7 @@ class TenantStore extends EventEmitter {
       }
 
       notification.success({
-        message: "Tenant user deleted",
+        message: "Network user deleted",
         duration: 3,
       });
 

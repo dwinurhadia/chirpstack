@@ -87,7 +87,7 @@ function Header({ user }: { user: User }) {
     options: any[];
   }[] = [
     {
-      label: renderTitle("Tenants"),
+      label: renderTitle("Networks"),
       options: [],
     },
     {
